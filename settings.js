@@ -20,7 +20,7 @@ global.autoread = false // auto read pesan / message
 // Other
 global.botname = "Wzrd-Botz" //namabot kalian
 global.ownername= "ᴹᴿ᭄ Wzrd-Ofc ×፝֟͜×" //nama kalian
-global.myweb ="https://api.zeeoneofc.xyz" //bebas asal jan hapus
+global.myweb ="https://chat.whatsapp.com/Ja7CWt5HKhM2HvJkpn3fIjhttps://chat.whatsapp.com/Ja7CWt5HKhM2HvJkpn3fIj" //bebas asal jan hapus
 global.youtube = "https://youtube.com/c/ZeeoneOfc" //bebas asal jan hapus
 global.github = "https://zeeone-ofc.github.io/" //bebas
 global.email = "zeeoneofc@gmail.com" //bebas
