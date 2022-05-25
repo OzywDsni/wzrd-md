@@ -1171,10 +1171,13 @@ break
                 alpha.sendMessage(from, { text: tekss, mentions: participants.map(a => a.id) }, { quoted: fkontak })
             break
             case 'hidetag':
-                if (!m.isGroup) return reply(lang.groupOnly())
-                if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
-                alpha.sendMessage(from, { text : q ? q : '' , mentions: participants.map(a => a.id)}, {quoted: fkontak})
+                if (!m.isGroup) throw mess.group
+            if (!isAdmins) throw mess.admin
+            XeonBotInc.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+            }
             break
+
+if (!m.isGroup) throw mess.group            if (!isAdmins) throw mess.admin            XeonBotInc.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })            }            break
             case 'kick': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
