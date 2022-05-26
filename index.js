@@ -1172,7 +1172,7 @@ break
             break
             case 'hidetag':
                 if (!m.isGroup) return reply(lang.groupOnly())
-                if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
+                if (!(isGroupAdmins || isGroupOwner || isCreator )) return reply(lang.adminOnly())
                 alpha.sendMessage(from, { text : q ? q : '' , mentions: participants.map(a => a.id)}, {quoted: fkontak})
             break
             case 'kick': {
